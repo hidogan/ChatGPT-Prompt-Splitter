@@ -1,0 +1,63 @@
+ChatGPT Prompt Splitter
+
+## **Overview:**
+The ChatGPT Prompt Splitter is an open-source web-based tool that allows users to input large text prompts, divide them into smaller chunks, and then send those chunks sequentially to ChatGPT for processing. The purpose of this tool is to ensure that users can send large amounts of text or complex prompts to ChatGPT in manageable pieces without losing context.
+
+## **Goals and Objectives:**
+1. **Enable Safe Handling of Large Texts**: Provide a way to send large text prompts to ChatGPT, respecting character limits (up to 15,000 characters per chunk).
+2. **User-Friendly Interface**: Allow users to easily input their large text prompt, customize the chunk size, and receive automated instructions for splitting and sending the text to ChatGPT.
+3. **Preserve Context and Integrity**: Ensure that each chunk is labeled and processed in sequence to maintain the logical flow of the prompt.
+4. **Automate Responses**: Upon sending all chunks, the tool will instruct ChatGPT to begin processing the full text.
+
+## **Target Audience:**
+- Developers who need to interact with large datasets or long text prompts in ChatGPT.
+- Content creators, researchers, and writers working with large pieces of text that need summarization or analysis.
+- Data scientists working with structured or unstructured data that require AI-based assistance.
+
+## **Features and Functionality:**
+
+### 1. **User Input Section:**
+   - **Text Input Box**: Users can paste or type a large text prompt into a text box.
+   - **Maximum Chunk Size**: The user can choose the maximum character limit per chunk (up to 15,000 characters).
+   - **Text Preview**: Show a preview of the text to be split, so the user can ensure it’s formatted correctly.
+
+### 2. **Chunking Mechanism:**
+   - **Automatic Text Splitting**: Automatically split the entered prompt into chunks based on the chosen maximum character limit. The tool will ensure the splits respect word boundaries.
+   - **Customizable Chunk Size**: Users can select a predefined chunk size or enter a custom value (within the max allowed limit).
+   - **Sequential Numbering**: Each chunk will be labeled as "[START PART X/Y]" and "[END PART X/Y]" for easy identification by ChatGPT.
+
+### 3. **Instructions for Sending Chunks to ChatGPT:**
+   - **Copy Instructions**: Provide a clear message to instruct the user to send chunks sequentially (e.g., "Send Part 1/10, then Part 2/10, and so on").
+   - **Validation**: Confirm that the user has correctly understood how to send the chunks and explain the importance of sequential order.
+   
+### 4. **Handling Responses:**
+   - **Response Acknowledgment**: ChatGPT will acknowledge receipt of each chunk (e.g., "Received part 1/10").
+   - **All Parts Sent Confirmation**: Once all parts are sent, the user can click a button or send a message saying "ALL PARTS SENT", prompting ChatGPT to process the complete text.
+
+### 5. **Output:**
+   - **Text Chunks**: Each chunk will be outputted as an individual message that the user can copy to send to ChatGPT.
+   - **Chunk Download Option**: Users can download the text chunks as a .txt file or in a CSV format for easy transfer.
+   - **Instructions for Sending Parts**: Provide instructions in a format that users can easily copy and paste to communicate with ChatGPT.
+
+### 6. **User Interface:**
+   - **Clean, Minimalist Design**: The design should be intuitive and easy to use, with clear instructions for each step of the process.
+   - **Progress Bar**: A visual indicator showing the splitting progress (e.g., "Splitting into 3 parts").
+   - **Responsive Layout**: Ensure the website is mobile-friendly and works on all major browsers.
+
+## **Technical Requirements:**
+1. **Frontend**: HTML, CSS, JavaScript (React or Vue.js for interactivity)
+2. **Backend**: Node.js or Python for handling chunking logic, user input, and file downloads.
+3. **APIs**: RESTful API for managing the splitting logic and storing user data (if needed).
+4. **Character Splitter**: Implement logic to ensure the text is split at word boundaries to prevent cutting off mid-sentence.
+5. **Storage**: Use local storage for saving user input temporarily (if session-based).
+
+## **Security and Privacy:**
+1. **Data Privacy**: Ensure that the tool does not store or misuse user data. All inputs should be processed locally or temporarily on the server, with no retention.
+2. **Secure Transactions**: If the tool is extended to support premium features, implement secure payment gateways for donations or premium access.
+
+## **Success Metrics:**
+1. **User Adoption**: Track the number of users and frequency of use.
+2. **Engagement**: Measure user engagement through session length and interactions with the tool.
+3. **Feedback**: Gather feedback from users to improve the tool and address pain points.
+4. **Accuracy**: Ensure that the splitting and chunking process is accurate and provides meaningful, easily processed sections.
+
