@@ -1,6 +1,6 @@
-# ChatGPT Prompt Splitter
+# CutGPT - Prompt Splitter
 
-A React-based web application that helps users split large text prompts into smaller chunks suitable for ChatGPT's token limits. This tool ensures seamless communication with ChatGPT by automatically managing message segmentation and providing proper formatting.
+A React-based web application that helps users split large text prompts into smaller chunks suitable for AI chat models like ChatGPT. This tool ensures seamless communication with AI models by automatically managing message segmentation and providing proper formatting.
 
 ## Features
 
@@ -23,8 +23,8 @@ A React-based web application that helps users split large text prompts into sma
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/hidogan/ChatGPT-Prompt-Splitter.git
-cd ChatGPT-Prompt-Splitter
+git clone https://github.com/hidogan/CutGPT-Prompt-Splitter.git
+cd CutGPT-Prompt-Splitter
 ```
 
 2. Install dependencies:
@@ -57,6 +57,7 @@ yarn start
 - TypeScript
 - Chakra UI
 - Jest for testing
+- Google Analytics 4 for usage tracking
 
 ## Contributing
 
